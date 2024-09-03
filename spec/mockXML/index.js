@@ -41,7 +41,7 @@ const TEST7 = `
     <employee id="789" name="ashley"></employee>
 </xml>
 `
-const TEST8 =  `
+const TEST8 = `
 <xml>
     <employee><name>Alex</name></employee>
     <location>US</location>
@@ -93,23 +93,30 @@ const TEST17 = `<aaa>
 </bbb>
 </aaa>`
 
+const TEST18 = `<data>
+<offer>
+    <id>1</id>
+    <name><![CDATA[Test value]]></name>
+</offer>
+</data>`;
 
 module.exports.MOCK_DATA = {
-    TEST1: TEST1,
-    TEST2: TEST2,
-    TEST3: TEST3,
-    TEST4: TEST4,
-    TEST5: TEST5,
-    TEST6: TEST6,
-    TEST7: TEST7,
-    TEST8: TEST8,
-    TEST9: TEST9,
-    I_TEST10: TEST10,
-    I_TEST11: TEST11,
-    I_TEST12: TEST12,
-    TEST13: TEST13,
-    TEST14: TEST14,
-    TEST15: TEST15,
-    TEST16: TEST16,
-    TEST17: TEST17
+  TEST1: TEST1,
+  TEST2: TEST2,
+  TEST3: TEST3,
+  TEST4: TEST4,
+  TEST5: TEST5,
+  TEST6: TEST6,
+  TEST7: TEST7,
+  TEST8: TEST8,
+  TEST9: TEST9,
+  I_TEST10: TEST10,
+  I_TEST11: TEST11,
+  I_TEST12: TEST12,
+  TEST13: TEST13,
+  TEST14: TEST14,
+  TEST15: TEST15,
+  TEST16: TEST16,
+  TEST17: TEST17,
+  TEST18: TEST18
 };
