@@ -1,11 +1,11 @@
 {
-  "name": "xml-2-json-streaming",
-  "version": "0.1.2",
-  "description": "Simple module to convert XML to JSON with javascript",
+  "name": "@lilabyte/xml-stream-2-json",
+  "version": "0.1.3",
+  "description": "Simple module to convert XML stream to JSON with javascript",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/jerenmb/xml-2-json.git"
+    "url": "https://github.com/lilabyte/xml-2-json.git"
   },
   "scripts": {
     "test": "jasmine"
@@ -21,7 +21,7 @@
     "transform stream",
     "convert"
   ],
-  "author": "Jeren Browning",
+  "author": "Jakub Michalski <j.michalski@byteitup.com>",
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {

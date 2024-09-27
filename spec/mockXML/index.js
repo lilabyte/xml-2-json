@@ -1,3 +1,4 @@
+const fs = require('fs');
 const TEST1 = `<employee id="12345" building="1" geo="US">
 <name>Alex</name>
 </employee>`;
@@ -93,10 +94,18 @@ const TEST17 = `<aaa>
 </bbb>
 </aaa>`
 
-const TEST18 = `<data>
+const TEST18 = `<!DOCTYPE nokaut SYSTEM "http://www.nokaut.pl/integracja/nokaut.dtd"><data>
 <offer>
     <id>1</id>
-    <name><![CDATA[Test value]]></name>
+    <name><![CDATA[<p>Test value</p>
+      <span>OJOJ</span>
+      <span>DODO</span>
+      s
+      s
+      a
+      sdasd
+      
+    ]]></name>
 </offer>
 </data>`;
 
@@ -118,5 +127,6 @@ module.exports.MOCK_DATA = {
   TEST15: TEST15,
   TEST16: TEST16,
   TEST17: TEST17,
-  TEST18: TEST18
+  TEST18: TEST18,
+  TEST19: fs.readFileSync('./spec/test.xml', 'utf8')
 };

@@ -436,9 +436,8 @@ const clean = require('../lib/cleanXML');
 describe('CDATA handling:', () => {
     it('should handle files with CDATA', () => {
         const cleanXML = clean(mockData.TEST18);
-        const json = traverse(cleanXML, true);
 
-        console.log(json);
+        const json = traverse(cleanXML, true);
 
         const result = {
             data: {
