@@ -106,7 +106,15 @@ const TEST19 = `<!--  TEST  -->\n
 <Document>
     <Row Column1="1" Column2="2" />
     <Row Column3="3" Column4=""<p>test</p>"" />
+    <Row Column4="4" Column5="5">test</Row >
+    <Row Column6="6" Column7="7">tests</ Row>
 </Document>
+`;
+
+const TEST20 = `<?xml version="1.0"?>
+<shop>
+<product></product >
+</shop>
 `
 
 module.exports.MOCK_DATA = {
@@ -129,4 +137,5 @@ module.exports.MOCK_DATA = {
   TEST17: TEST17,
   TEST18: TEST18,
   TEST19: TEST19,
+  TEST20: TEST20
 };

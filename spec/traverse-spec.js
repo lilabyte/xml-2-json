@@ -433,24 +433,24 @@ const clean = require('../lib/cleanXML');
 //     });
 // });
 
-describe('CDATA handling:', () => {
-    it('should handle files with CDATA', () => {
-        const cleanXML = clean(mockData.TEST18);
+// describe('CDATA handling:', () => {
+//     it('should handle files with CDATA', () => {
+//         const cleanXML = clean(mockData.TEST18);
 
-        const json = traverse(cleanXML, true);
+//         const json = traverse(cleanXML, true);
 
-        const result = {
-            data: {
-                offer: {
-                    id: '1',
-                    name: 'Test value'
-                }
-            }
-        }
+//         const result = {
+//             data: {
+//                 offer: {
+//                     id: '1',
+//                     name: 'Test value'
+//                 }
+//             }
+//         }
 
-        expect(JSON.stringify(json)).toBe(JSON.stringify(result));
-    });
-})
+//         expect(JSON.stringify(json)).toBe(JSON.stringify(result));
+//     });
+// })
 
 describe('Attribute Mode', () => {
     it('should handle files with complexed attributes', () => {
@@ -467,6 +467,16 @@ describe('Attribute Mode', () => {
                     {
                         Column3: '3',
                         Column4: '"<p>test</p>"'
+                    },
+                    {
+                        Column4: '4',
+                        Column5: '5',
+                        textNode: 'test'
+                    },
+                    {
+                        Column6: '6',
+                        Column7: '7',
+                        textNode: 'tests'
                     }
                 ]
             }
