@@ -1,6 +1,6 @@
 {
   "name": "@lilabyte/xml-stream-2-json",
-  "version": "0.1.3",
+  "version": "0.1.5",
   "description": "Simple module to convert XML stream to JSON with javascript",
   "main": "index.js",
   "repository": {

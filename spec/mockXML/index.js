@@ -97,17 +97,17 @@ const TEST17 = `<aaa>
 const TEST18 = `<!DOCTYPE nokaut SYSTEM "http://www.nokaut.pl/integracja/nokaut.dtd"><data>
 <offer>
     <id>1</id>
-    <name><![CDATA[<p>Test value</p>
-      <span>OJOJ</span>
-      <span>DODO</span>
-      s
-      s
-      a
-      sdasd
-      
-    ]]></name>
+    <name><![CDATA[Test value]]></name>
 </offer>
 </data>`;
+
+const TEST19 = `<!--  TEST  -->\n
+<!-- TEST2  -->\n
+<Document>
+    <Row Column1="1" Column2="2" />
+    <Row Column3="3" Column4=""<p>test</p>"" />
+</Document>
+`
 
 module.exports.MOCK_DATA = {
   TEST1: TEST1,
@@ -128,5 +128,5 @@ module.exports.MOCK_DATA = {
   TEST16: TEST16,
   TEST17: TEST17,
   TEST18: TEST18,
-  TEST19: fs.readFileSync('./spec/test.xml', 'utf8')
+  TEST19: TEST19,
 };

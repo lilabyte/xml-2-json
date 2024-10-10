@@ -451,3 +451,27 @@ describe('CDATA handling:', () => {
         expect(JSON.stringify(json)).toBe(JSON.stringify(result));
     });
 })
+
+describe('Attribute Mode', () => {
+    it('should handle files with complexed attributes', () => {
+        const cleanXML = clean(mockData.TEST19);
+        const json = traverse(cleanXML, true);
+
+        const result = {
+            Document: {
+                Row: [
+                    {
+                        Column1: '1',
+                        Column2: '2'
+                    },
+                    {
+                        Column3: '3',
+                        Column4: '"<p>test</p>"'
+                    }
+                ]
+            }
+        };
+
+        expect(JSON.stringify(json)).toBe(JSON.stringify(result));
+    });
+});
